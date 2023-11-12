@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yat.unifiedloginverificationsystem.mapper.AdminMapper">
+
+    <select id="getRegister" resultType="com.yat.unifiedloginverificationsystem.entry.User">
+        select uid, cn, phone as telephoneNumber,apply_time as ApplyTime
+        from tb_user
+        where is_approved = 0
+    </select>
+
+</mapper>

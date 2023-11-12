@@ -1,0 +1,17 @@
+{
+  "pathPrefix": "",                       // 上下文路径
+  "allInOne": true,                       // 是否将文档合并到一个文件中，一般推荐为true
+  "style": "xt256",                       // 基于highlight.js的代码高亮设置
+  "outPath": "./src/main/resources/static/接口文档",
+  "projectName": "统一身份验证",
+  "inlineEnum": false,
+  "packageFilters": "com.yat.unifiedloginverificationsystem.controller.*",
+  "dataDictionaries": [
+    {
+      "title": "常见返回码",
+      "enumClassName": "com.yat.unifiedloginverificationsystem.commen.Code",
+      "codeField": "code",
+      "descField": "msg"
+    }
+  ]
+}
