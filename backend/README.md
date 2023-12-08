@@ -7,7 +7,7 @@
 1.  jdk 11，新版openLDAP适配的最低jdk版本
 2.  maven
 3.  MySQL
-4. openLDAP
+4.  openLDAP
 
 ## 2.修改数据库源：
 
@@ -24,7 +24,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://139.9.44.141:3306/db_auth?serverTimezone=UTC
     username: root
-    password: 123456
+    password: 我的学号。。。
     # 配置Druid数据源
     type: com.alibaba.druid.pool.DruidDataSource
   # ldap setting

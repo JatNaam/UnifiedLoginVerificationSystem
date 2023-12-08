@@ -70,7 +70,7 @@ public class UserController {
         String logo = "http://139.9.44.141/resource/szu.png";
         String path = "/resource/qrCode/qr_" + phone + ".png";
         String _path = "http://139.9.44.141/" + path;
-//        String path = "D:\\CodePorject\\temp\\UnifiedLoginVerificationSystem\\src\\main\\resources\\static\\img\\qrCode_" + phone + ".png";
+//        String path = "D:\\CodeProject\\temp\\UnifiedLoginVerificationSystem\\src\\main\\resources\\static\\img\\qrCode_" + phone + ".png";
 //        String _path = "http://localhost:8081/static/img/qrCode_" + phone + ".png";
         String secretKey = userService.getSecretKey(phone);
         // 生成二维码内容

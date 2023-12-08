@@ -1,0 +1,14 @@
+create table tb_user
+(
+    uid         int auto_increment
+        primary key,
+    sn          varchar(20)                        not null,
+    cn          varchar(20)                        not null,
+    phone       varchar(11)                        not null,
+    secret_key  varchar(50)                        null,
+    is_approved int      default 0                 not null,
+    is_bindTOTP int      default 0                 not null,
+    apply_time  datetime default CURRENT_TIMESTAMP not null,
+    constraint uid
+        unique (uid)
+);
