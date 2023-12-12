@@ -62,9 +62,10 @@ public class LoginController {
                 }
             } else {
                 User _user = (User) account;
-                if (userService.getAu(_user.getTelephoneNumber()) == 1) {
-                    return new R<>(Code.SUCCESS, "请进行二次验证", null);
-                } else if (_user.getUserPassword().equals(entryText)) {
+                if (_user.getUserPassword().equals(entryText)) {
+                    if (userService.getAu(_user.getTelephoneNumber()) == 1) {
+                        return new R<>(Code.SUCCESS, "请进行二次验证", null);
+                    }
                     success = true;
                     userInfoDTO.setFirst_name(_user.getSn());
                     userInfoDTO.setFull_name(_user.getCn());
